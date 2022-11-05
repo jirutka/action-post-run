@@ -3972,7 +3972,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     const exec = __nccwpck_require__(514);
     const run = core.getInput("run");
     const cwd = core.getInput("working-directory");
-    yield exec.exec(run, [], { cwd });
+    yield exec.exec("bash", [run], { cwd });
 }))();
 
 

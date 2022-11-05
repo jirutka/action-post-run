@@ -20,4 +20,7 @@ jobs:
       - name: Define second post action
         uses: ./
         with:
-          run: echo "The second post action"
+          run: |
+            echo "The second post's action"
+            ls -la;
+            id
